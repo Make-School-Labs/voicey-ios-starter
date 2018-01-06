@@ -24,6 +24,13 @@
 		05612A5D200092C20039A940 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A59200092C10039A940 /* UIViewController+Extensions.swift */; };
 		05612A5E200092C20039A940 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A5A200092C10039A940 /* NibLoadable.swift */; };
 		05612A5F200092C20039A940 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A5B200092C10039A940 /* UICollectionView+Extensions.swift */; };
+		05612A61200095DF0039A940 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A60200095DF0039A940 /* UIWindow+Extensions.swift */; };
+		05612A6320009E0A0039A940 /* VoiceyHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A6220009E0A0039A940 /* VoiceyHTTPClient.swift */; };
+		05612A6620009E710039A940 /* MemoDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A6420009E710039A940 /* MemoDisplayViewController.swift */; };
+		05612A6720009E710039A940 /* MemoDisplayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05612A6520009E710039A940 /* MemoDisplayViewController.xib */; };
+		05612A6A20009F180039A940 /* CreateMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A6820009F180039A940 /* CreateMemoViewController.swift */; };
+		05612A6B20009F180039A940 /* CreateMemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05612A6920009F180039A940 /* CreateMemoViewController.xib */; };
+		05612A6E2000A1F10039A940 /* MemoListDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05612A6D2000A1F10039A940 /* MemoListDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,13 @@
 		05612A59200092C10039A940 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		05612A5A200092C10039A940 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		05612A5B200092C10039A940 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		05612A60200095DF0039A940 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		05612A6220009E0A0039A940 /* VoiceyHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceyHTTPClient.swift; sourceTree = "<group>"; };
+		05612A6420009E710039A940 /* MemoDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDisplayViewController.swift; sourceTree = "<group>"; };
+		05612A6520009E710039A940 /* MemoDisplayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoDisplayViewController.xib; sourceTree = "<group>"; };
+		05612A6820009F180039A940 /* CreateMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoViewController.swift; sourceTree = "<group>"; };
+		05612A6920009F180039A940 /* CreateMemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateMemoViewController.xib; sourceTree = "<group>"; };
+		05612A6D2000A1F10039A940 /* MemoListDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +164,7 @@
 		05612A3F200091710039A940 /* MemoScene */ = {
 			isa = PBXGroup;
 			children = (
+				05612A6C2000A1E60039A940 /* Datasources */,
 				05612A40200091710039A940 /* ViewControllers */,
 			);
 			path = MemoScene;
@@ -160,6 +175,10 @@
 			children = (
 				05612A4F200091E30039A940 /* MemoListViewController.swift */,
 				05612A50200091E30039A940 /* MemoListViewController.xib */,
+				05612A6420009E710039A940 /* MemoDisplayViewController.swift */,
+				05612A6520009E710039A940 /* MemoDisplayViewController.xib */,
+				05612A6820009F180039A940 /* CreateMemoViewController.swift */,
+				05612A6920009F180039A940 /* CreateMemoViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +214,7 @@
 		05612A44200091710039A940 /* APIClients */ = {
 			isa = PBXGroup;
 			children = (
+				05612A6220009E0A0039A940 /* VoiceyHTTPClient.swift */,
 			);
 			path = APIClients;
 			sourceTree = "<group>";
@@ -221,8 +241,17 @@
 				05612A5B200092C10039A940 /* UICollectionView+Extensions.swift */,
 				05612A58200092C10039A940 /* UIColor+Extensions.swift */,
 				05612A59200092C10039A940 /* UIViewController+Extensions.swift */,
+				05612A60200095DF0039A940 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		05612A6C2000A1E60039A940 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				05612A6D2000A1F10039A940 /* MemoListDatasource.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,11 +337,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05612A6720009E710039A940 /* MemoDisplayViewController.xib in Resources */,
 				05612A4E200091D20039A940 /* LoginViewController.xib in Resources */,
 				05612A562000924E0039A940 /* MemoListCell.xib in Resources */,
 				05612A2720008BE70039A940 /* LaunchScreen.storyboard in Resources */,
 				05612A2420008BE70039A940 /* Assets.xcassets in Resources */,
 				05612A4A200091C80039A940 /* RegisterViewController.xib in Resources */,
+				05612A6B20009F180039A940 /* CreateMemoViewController.xib in Resources */,
 				05612A52200091E30039A940 /* MemoListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,12 +362,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05612A6A20009F180039A940 /* CreateMemoViewController.swift in Sources */,
 				05612A4D200091D20039A940 /* LoginViewController.swift in Sources */,
+				05612A6E2000A1F10039A940 /* MemoListDatasource.swift in Sources */,
 				05612A552000924E0039A940 /* MemoListCell.swift in Sources */,
+				05612A61200095DF0039A940 /* UIWindow+Extensions.swift in Sources */,
+				05612A6620009E710039A940 /* MemoDisplayViewController.swift in Sources */,
 				05612A5F200092C20039A940 /* UICollectionView+Extensions.swift in Sources */,
 				05612A51200091E30039A940 /* MemoListViewController.swift in Sources */,
 				05612A5E200092C20039A940 /* NibLoadable.swift in Sources */,
 				05612A49200091C80039A940 /* RegisterViewController.swift in Sources */,
+				05612A6320009E0A0039A940 /* VoiceyHTTPClient.swift in Sources */,
 				05612A5D200092C20039A940 /* UIViewController+Extensions.swift in Sources */,
 				05612A5C200092C20039A940 /* UIColor+Extensions.swift in Sources */,
 				05612A2220008BE70039A940 /* voicy_ios.xcdatamodeld in Sources */,
